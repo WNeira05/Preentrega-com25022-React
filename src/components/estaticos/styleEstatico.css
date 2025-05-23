@@ -1,0 +1,73 @@
+/* Estilo general del nav */
+header {
+  background-color: #f7d9bc;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.link {
+  color: #c06c84;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #94485c;
+}
+
+/* Botón de logout */
+.btnLogout {
+  color: #683c3c;
+  font-weight: bold;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.btnLogout:hover {
+  color: #a14e2e;
+}
+
+
+.cartnav {
+  margin-left: auto; /* Empuja el carrito al extremo derecho */
+}
+
+.btnCart {
+  background-color: #c06c84;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.7rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.btnCart:hover {
+  background-color: #94485c;
+}
+
+
+footer{
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
