@@ -1,12 +1,57 @@
-# React + Vite
+🚀 Funcionalidades Implementadas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✅ Cart — Componente de Carrito
 
-Currently, two official plugins are available:
+🎬 Drawer animado lateral	Se abre/cierra con animación desde el lateral derecho.
+🧺 Listado de productos agrupados	Agrupa por ID e incluye nombre, descripción, precio y subtotal.
+➕➖ Controles de cantidad	Botones para aumentar/disminuir la cantidad de cada ítem.
+❌ Eliminar ítem	Botón para quitar un producto específico del carrito.
+🗑️ Vaciar carrito (clearCart)	Elimina todos los productos del carrito.
+🛍️ Confirmar compra (confirmarCompra)	Descuenta el stock y limpia el carrito.
+🏠 Redirección al Home	Si el carrito está vacío, redirige automáticamente.
+✅ CartContext — Gestión del Carrito Global
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🧠 Context API	Uso de createContext y useState para manejar el estado global.
+🗃️ Carga de productos	Desde un archivo JSON simulado.
+📉 Control de stock	Antes de agregar o aumentar cantidad, se verifica disponibilidad.
+💬 Mensajes interactivos	Integración con SweetAlert2 para mostrar alertas amigables.
+🧮 Agrupamiento de Productos
 
-## Expanding the ESLint configuration
+🧩 Cuando se agregan productos al carrito:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+    Se agrupan automáticamente por id.
+
+    Se actualiza la cantidad total por producto.
+
+🔧 Funciones Principales
+➕ handleAddToCart
+
+    ✅ Verifica si el producto ya está en el carrito.
+
+    🔒 Controla que la cantidad no supere el stock disponible.
+
+    🔁 Si existe, incrementa la cantidad.
+
+    🆕 Si no, lo agrega al array cart.
+
+➖ handleDeleteFromCart
+
+    ➖ Si hay más de uno, disminuye la cantidad.
+
+    ❌ Si hay solo uno, lo elimina del carrito.
+
+🔼 handleIncreaseQuantity
+
+    🚫 Verifica que no supere el stock antes de aumentar.
+
+🗑️ clearCart
+
+    🧹 Elimina todos los productos del carrito.
+
+🛍️ confirmarCompra
+
+    📉 Descuenta el stock disponible.
+
+    🧼 Limpia el carrito.
+
+    ✅ Muestra mensaje de éxito con SweetAlert2.

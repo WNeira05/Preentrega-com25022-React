@@ -1,4 +1,4 @@
-/* Estilo general del nav */
+
 header {
   background-color: #f7d9bc;
   padding: 1rem;
@@ -14,7 +14,7 @@ nav ul {
   padding: 0;
 }
 
-/* Links */
+
 .link {
   color: #c06c84;
   text-decoration: none;
@@ -26,7 +26,7 @@ nav ul {
   color: #94485c;
 }
 
-/* Botón de logout */
+
 .btnLogout {
   color: #683c3c;
   font-weight: bold;
