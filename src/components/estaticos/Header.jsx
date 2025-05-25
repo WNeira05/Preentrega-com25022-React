@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './styleEstatico.css';
 import Cart from '../Cart';
-import { AuthContext } from '../../context/AuthContext';  // Ajusta ruta si hace falta
+import { AuthContext } from '../../context/AuthContext';  
 
 const Header = ({ cartItems, borrarProducto }) => {
   const [isCartOpen, setCartOpen] = useState(false);

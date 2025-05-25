@@ -65,7 +65,7 @@ const Productos = ({ producto, agregarCarrito }) => {
         onClick={handleAgregar}
         disabled={sinStock}
         style={{
-          backgroundColor: sinStock ? '#ccc' : '#007bff',
+          backgroundColor: sinStock ? '#ccc' : '#4CAF50',
           color: sinStock ? '#666' : '#fff',
           cursor: sinStock ? 'not-allowed' : 'pointer',
           padding: '10px',

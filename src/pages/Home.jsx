@@ -17,10 +17,7 @@ const Home = ({
         <h1>Tienda Online Anahi Lenceria Femenina</h1>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-          voluptate illum molestias, voluptates dolorem rerum. Alias tempore ut
-          nisi eum, harum natus velit veritatis ea iste illum facere, ipsam
-          modi!
+        Trabajamos la mejor calidad y diseño, al mejor precio del mercado. Encontrá prendas exclusivas que te hagan sentir única.
         </p>
         {cargando ? (
           <div
